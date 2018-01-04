@@ -1,0 +1,38 @@
+PODS:
+  - Alamofire (4.6.0)
+  - Log (1.0)
+  - ReachabilitySwift (4.1.0)
+  - SnapKit (4.0.0)
+  - SwiftLint (0.24.0)
+  - YYCache (1.0.4)
+  - YYImage (1.0.4):
+    - YYImage/Core (= 1.0.4)
+  - YYImage/Core (1.0.4)
+  - YYImage/WebP (1.0.4):
+    - YYImage/Core
+  - YYWebImage (1.0.5):
+    - YYCache
+    - YYImage
+
+DEPENDENCIES:
+  - Alamofire
+  - Log
+  - ReachabilitySwift
+  - SnapKit
+  - SwiftLint
+  - YYImage/WebP
+  - YYWebImage
+
+SPEC CHECKSUMS:
+  Alamofire: f41a599bd63041760b26d393ec1069d9d7b917f4
+  Log: 5e368c9528db07517d18d2d04ff5fe2b6f5a1e21
+  ReachabilitySwift: 6849231cd4e06559f3b9ef4a97a0a0f96d41e09f
+  SnapKit: a42d492c16e80209130a3379f73596c3454b7694
+  SwiftLint: a014c92b4664e8b13f380f8640a51bb1733778ba
+  YYCache: 8105b6638f5e849296c71f331ff83891a4942952
+  YYImage: 1e1b62a9997399593e4b9c4ecfbbabbf1d3f3b54
+  YYWebImage: 5f7f36aee2ae293f016d418c7d6ba05c4863e928
+
+PODFILE CHECKSUM: 8f026f6db597e169473549030ef5f2c9aca0e001
+
+COCOAPODS: 1.3.1

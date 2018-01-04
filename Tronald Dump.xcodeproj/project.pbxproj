@@ -1,0 +1,857 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		167248407C988986D15EFFFF /* Pods_Tronald_DumpTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 85EFC627FF743351B8E5F087 /* Pods_Tronald_DumpTests.framework */; };
+		22DD368323C98E63B897486E /* Pods_Tronald_Dump.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F91523033BAA57E874D5AAE /* Pods_Tronald_Dump.framework */; };
+		E12246DE1FFE46BC00A5D859 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12246DD1FFE46BC00A5D859 /* AppDelegate.swift */; };
+		E12246E31FFE46BC00A5D859 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12246E11FFE46BC00A5D859 /* Main.storyboard */; };
+		E12246E51FFE46BC00A5D859 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12246E41FFE46BC00A5D859 /* Assets.xcassets */; };
+		E12246E81FFE46BC00A5D859 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12246E61FFE46BC00A5D859 /* LaunchScreen.storyboard */; };
+		E12246F31FFE46BC00A5D859 /* Tronald_DumpTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12246F21FFE46BC00A5D859 /* Tronald_DumpTests.swift */; };
+		E12247021FFE494600A5D859 /* TronaldDumpAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247011FFE494600A5D859 /* TronaldDumpAPIService.swift */; };
+		E12247051FFE4D0D00A5D859 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247041FFE4D0D00A5D859 /* Utils.swift */; };
+		E12247071FFE4DA600A5D859 /* TagListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247061FFE4DA600A5D859 /* TagListCollectionViewController.swift */; };
+		E122470B1FFE4DEB00A5D859 /* SimpleTextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122470A1FFE4DEB00A5D859 /* SimpleTextCollectionViewCell.swift */; };
+		E122470E1FFE4E5100A5D859 /* TronaldCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122470D1FFE4E5100A5D859 /* TronaldCollectionViewController.swift */; };
+		E12247101FFE500700A5D859 /* TronaldBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122470F1FFE500700A5D859 /* TronaldBaseViewController.swift */; };
+		E12247131FFE547E00A5D859 /* TronaldStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247121FFE547E00A5D859 /* TronaldStyles.swift */; };
+		E12247161FFE551500A5D859 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = E12247151FFE551500A5D859 /* .swiftlint.yml */; };
+		E12247181FFE55C800A5D859 /* TagListCollectionDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247171FFE55C800A5D859 /* TagListCollectionDataAdapter.swift */; };
+		E122471A1FFE55E100A5D859 /* TronaldBaseDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247191FFE55E100A5D859 /* TronaldBaseDataAdapter.swift */; };
+		E122471D1FFE56EA00A5D859 /* TronaldBaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122471C1FFE56EA00A5D859 /* TronaldBaseDataSource.swift */; };
+		E12247201FFE58A100A5D859 /* TagsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122471F1FFE58A100A5D859 /* TagsDataSource.swift */; };
+		E12247231FFE7CD900A5D859 /* UIColor+Tronald.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247221FFE7CD900A5D859 /* UIColor+Tronald.swift */; };
+		E12247251FFE7DDF00A5D859 /* TronaldBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247241FFE7DDF00A5D859 /* TronaldBaseCollectionViewCell.swift */; };
+		E12247271FFE7E5800A5D859 /* UIView+Tronald.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247261FFE7E5800A5D859 /* UIView+Tronald.swift */; };
+		E12247291FFE7E8600A5D859 /* TronaldStyles+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247281FFE7E8600A5D859 /* TronaldStyles+Animation.swift */; };
+		E122472B1FFE83DD00A5D859 /* TagDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122472A1FFE83DD00A5D859 /* TagDetailViewController.swift */; };
+		E122472D1FFE844D00A5D859 /* TagDetailDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122472C1FFE844D00A5D859 /* TagDetailDataAdapter.swift */; };
+		E122472F1FFE846700A5D859 /* TagDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122472E1FFE846700A5D859 /* TagDataSource.swift */; };
+		E12247311FFE859100A5D859 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247301FFE859100A5D859 /* ControllerFactory.swift */; };
+		E12247341FFE8A5C00A5D859 /* TrumpQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247331FFE8A5C00A5D859 /* TrumpQuote.swift */; };
+		E12247361FFE925700A5D859 /* QuoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247351FFE925700A5D859 /* QuoteCollectionViewCell.swift */; };
+		E12247381FFE96C700A5D859 /* ControllerFactoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247371FFE96C700A5D859 /* ControllerFactoryTests.swift */; };
+		E12247391FFE96CF00A5D859 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247301FFE859100A5D859 /* ControllerFactory.swift */; };
+		E122473A1FFE973A00A5D859 /* TronaldBaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122470F1FFE500700A5D859 /* TronaldBaseViewController.swift */; };
+		E122473B1FFE973A00A5D859 /* TronaldCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122470D1FFE4E5100A5D859 /* TronaldCollectionViewController.swift */; };
+		E122473C1FFE973A00A5D859 /* TagListCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247061FFE4DA600A5D859 /* TagListCollectionViewController.swift */; };
+		E122473D1FFE973A00A5D859 /* TagListCollectionDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247171FFE55C800A5D859 /* TagListCollectionDataAdapter.swift */; };
+		E122473E1FFE973A00A5D859 /* TagDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122472A1FFE83DD00A5D859 /* TagDetailViewController.swift */; };
+		E122473F1FFE973A00A5D859 /* TagDetailDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122472C1FFE844D00A5D859 /* TagDetailDataAdapter.swift */; };
+		E12247401FFE973A00A5D859 /* TrumpQuote.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247331FFE8A5C00A5D859 /* TrumpQuote.swift */; };
+		E12247411FFE973A00A5D859 /* TagDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122472E1FFE846700A5D859 /* TagDataSource.swift */; };
+		E12247421FFE973A00A5D859 /* TagsDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122471F1FFE58A100A5D859 /* TagsDataSource.swift */; };
+		E12247431FFE973A00A5D859 /* TronaldBaseDataAdapter.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247191FFE55E100A5D859 /* TronaldBaseDataAdapter.swift */; };
+		E12247441FFE973A00A5D859 /* TronaldBaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122471C1FFE56EA00A5D859 /* TronaldBaseDataSource.swift */; };
+		E12247451FFE973A00A5D859 /* TronaldDumpAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247011FFE494600A5D859 /* TronaldDumpAPIService.swift */; };
+		E12247461FFE973A00A5D859 /* TronaldBaseCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247241FFE7DDF00A5D859 /* TronaldBaseCollectionViewCell.swift */; };
+		E12247471FFE973A00A5D859 /* SimpleTextCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E122470A1FFE4DEB00A5D859 /* SimpleTextCollectionViewCell.swift */; };
+		E12247481FFE973A00A5D859 /* QuoteCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247351FFE925700A5D859 /* QuoteCollectionViewCell.swift */; };
+		E12247491FFE973A00A5D859 /* Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247041FFE4D0D00A5D859 /* Utils.swift */; };
+		E122474A1FFE973A00A5D859 /* UIColor+Tronald.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247221FFE7CD900A5D859 /* UIColor+Tronald.swift */; };
+		E122474B1FFE973A00A5D859 /* UIView+Tronald.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247261FFE7E5800A5D859 /* UIView+Tronald.swift */; };
+		E122474C1FFE974600A5D859 /* TronaldStyles.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247121FFE547E00A5D859 /* TronaldStyles.swift */; };
+		E122474D1FFE974600A5D859 /* TronaldStyles+Animation.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247281FFE7E8600A5D859 /* TronaldStyles+Animation.swift */; };
+		E12247511FFE98FE00A5D859 /* TagsDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247501FFE98FE00A5D859 /* TagsDataSourceTests.swift */; };
+		E12247531FFE9A8B00A5D859 /* TagDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247521FFE9A8B00A5D859 /* TagDataSourceTests.swift */; };
+		E12247551FFE9AB500A5D859 /* TagListDataAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247541FFE9AB500A5D859 /* TagListDataAdapterTests.swift */; };
+		E12247571FFE9B6B00A5D859 /* TagDetailDataAdapterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247561FFE9B6B00A5D859 /* TagDetailDataAdapterTests.swift */; };
+		E12247591FFE9BA600A5D859 /* TronaldBaseDataSourceTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E12247581FFE9BA600A5D859 /* TronaldBaseDataSourceTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E12246EF1FFE46BC00A5D859 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E12246D21FFE46BC00A5D859 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E12246D91FFE46BC00A5D859;
+			remoteInfo = "Tronald Dump";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0F91523033BAA57E874D5AAE /* Pods_Tronald_Dump.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tronald_Dump.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C74E745EFB97CF809FAB454 /* Pods-Tronald DumpTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tronald DumpTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tronald DumpTests/Pods-Tronald DumpTests.release.xcconfig"; sourceTree = "<group>"; };
+		72A792C5F31FC6C26D3B5706 /* Pods-Tronald Dump.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tronald Dump.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tronald Dump/Pods-Tronald Dump.debug.xcconfig"; sourceTree = "<group>"; };
+		85EFC627FF743351B8E5F087 /* Pods_Tronald_DumpTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Tronald_DumpTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B28603C5F40FAEE3B0CE440C /* Pods-Tronald DumpTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tronald DumpTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tronald DumpTests/Pods-Tronald DumpTests.debug.xcconfig"; sourceTree = "<group>"; };
+		E12246DA1FFE46BC00A5D859 /* Tronald Dump.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Tronald Dump.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12246DD1FFE46BC00A5D859 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E12246E21FFE46BC00A5D859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E12246E41FFE46BC00A5D859 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E12246E71FFE46BC00A5D859 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E12246E91FFE46BC00A5D859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E12246EE1FFE46BC00A5D859 /* Tronald DumpTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Tronald DumpTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E12246F21FFE46BC00A5D859 /* Tronald_DumpTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tronald_DumpTests.swift; sourceTree = "<group>"; };
+		E12246F41FFE46BC00A5D859 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E12247011FFE494600A5D859 /* TronaldDumpAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TronaldDumpAPIService.swift; sourceTree = "<group>"; };
+		E12247041FFE4D0D00A5D859 /* Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utils.swift; sourceTree = "<group>"; };
+		E12247061FFE4DA600A5D859 /* TagListCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListCollectionViewController.swift; sourceTree = "<group>"; };
+		E122470A1FFE4DEB00A5D859 /* SimpleTextCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTextCollectionViewCell.swift; sourceTree = "<group>"; };
+		E122470D1FFE4E5100A5D859 /* TronaldCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TronaldCollectionViewController.swift; sourceTree = "<group>"; };
+		E122470F1FFE500700A5D859 /* TronaldBaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TronaldBaseViewController.swift; sourceTree = "<group>"; };
+		E12247121FFE547E00A5D859 /* TronaldStyles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TronaldStyles.swift; sourceTree = "<group>"; };
+		E12247151FFE551500A5D859 /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
+		E12247171FFE55C800A5D859 /* TagListCollectionDataAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListCollectionDataAdapter.swift; sourceTree = "<group>"; };
+		E12247191FFE55E100A5D859 /* TronaldBaseDataAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TronaldBaseDataAdapter.swift; sourceTree = "<group>"; };
+		E122471C1FFE56EA00A5D859 /* TronaldBaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TronaldBaseDataSource.swift; sourceTree = "<group>"; };
+		E122471F1FFE58A100A5D859 /* TagsDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsDataSource.swift; sourceTree = "<group>"; };
+		E12247221FFE7CD900A5D859 /* UIColor+Tronald.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Tronald.swift"; sourceTree = "<group>"; };
+		E12247241FFE7DDF00A5D859 /* TronaldBaseCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TronaldBaseCollectionViewCell.swift; sourceTree = "<group>"; };
+		E12247261FFE7E5800A5D859 /* UIView+Tronald.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Tronald.swift"; sourceTree = "<group>"; };
+		E12247281FFE7E8600A5D859 /* TronaldStyles+Animation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "TronaldStyles+Animation.swift"; sourceTree = "<group>"; };
+		E122472A1FFE83DD00A5D859 /* TagDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDetailViewController.swift; sourceTree = "<group>"; };
+		E122472C1FFE844D00A5D859 /* TagDetailDataAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDetailDataAdapter.swift; sourceTree = "<group>"; };
+		E122472E1FFE846700A5D859 /* TagDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDataSource.swift; sourceTree = "<group>"; };
+		E12247301FFE859100A5D859 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		E12247331FFE8A5C00A5D859 /* TrumpQuote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrumpQuote.swift; sourceTree = "<group>"; };
+		E12247351FFE925700A5D859 /* QuoteCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuoteCollectionViewCell.swift; sourceTree = "<group>"; };
+		E12247371FFE96C700A5D859 /* ControllerFactoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactoryTests.swift; sourceTree = "<group>"; };
+		E12247501FFE98FE00A5D859 /* TagsDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagsDataSourceTests.swift; sourceTree = "<group>"; };
+		E12247521FFE9A8B00A5D859 /* TagDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDataSourceTests.swift; sourceTree = "<group>"; };
+		E12247541FFE9AB500A5D859 /* TagListDataAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagListDataAdapterTests.swift; sourceTree = "<group>"; };
+		E12247561FFE9B6B00A5D859 /* TagDetailDataAdapterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagDetailDataAdapterTests.swift; sourceTree = "<group>"; };
+		E12247581FFE9BA600A5D859 /* TronaldBaseDataSourceTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TronaldBaseDataSourceTests.swift; sourceTree = "<group>"; };
+		F058EB8DE78DDBBBD1BA2A6B /* Pods-Tronald Dump.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tronald Dump.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tronald Dump/Pods-Tronald Dump.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E12246D71FFE46BC00A5D859 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22DD368323C98E63B897486E /* Pods_Tronald_Dump.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E12246EB1FFE46BC00A5D859 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				167248407C988986D15EFFFF /* Pods_Tronald_DumpTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4E521A799F956A2FD7B7AE69 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F91523033BAA57E874D5AAE /* Pods_Tronald_Dump.framework */,
+				85EFC627FF743351B8E5F087 /* Pods_Tronald_DumpTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		557C00BFE3587B516B580755 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				72A792C5F31FC6C26D3B5706 /* Pods-Tronald Dump.debug.xcconfig */,
+				F058EB8DE78DDBBBD1BA2A6B /* Pods-Tronald Dump.release.xcconfig */,
+				B28603C5F40FAEE3B0CE440C /* Pods-Tronald DumpTests.debug.xcconfig */,
+				5C74E745EFB97CF809FAB454 /* Pods-Tronald DumpTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E12246D11FFE46BB00A5D859 = {
+			isa = PBXGroup;
+			children = (
+				E12247151FFE551500A5D859 /* .swiftlint.yml */,
+				E12246DC1FFE46BC00A5D859 /* Tronald Dump */,
+				E12246F11FFE46BC00A5D859 /* Tronald DumpTests */,
+				E12246DB1FFE46BC00A5D859 /* Products */,
+				557C00BFE3587B516B580755 /* Pods */,
+				4E521A799F956A2FD7B7AE69 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		E12246DB1FFE46BC00A5D859 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E12246DA1FFE46BC00A5D859 /* Tronald Dump.app */,
+				E12246EE1FFE46BC00A5D859 /* Tronald DumpTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E12246DC1FFE46BC00A5D859 /* Tronald Dump */ = {
+			isa = PBXGroup;
+			children = (
+				E12247111FFE546E00A5D859 /* Appearance */,
+				E12247001FFE492100A5D859 /* Controllers */,
+				E122471E1FFE588800A5D859 /* Data */,
+				E12246FF1FFE491B00A5D859 /* Model */,
+				E12247081FFE4DCA00A5D859 /* Views */,
+				E12247031FFE4D0200A5D859 /* Utils */,
+				E12247211FFE7CCB00A5D859 /* Extensions */,
+				E12246DD1FFE46BC00A5D859 /* AppDelegate.swift */,
+				E12246E11FFE46BC00A5D859 /* Main.storyboard */,
+				E12246E41FFE46BC00A5D859 /* Assets.xcassets */,
+				E12246E61FFE46BC00A5D859 /* LaunchScreen.storyboard */,
+				E12246E91FFE46BC00A5D859 /* Info.plist */,
+			);
+			path = "Tronald Dump";
+			sourceTree = "<group>";
+		};
+		E12246F11FFE46BC00A5D859 /* Tronald DumpTests */ = {
+			isa = PBXGroup;
+			children = (
+				E12246F21FFE46BC00A5D859 /* Tronald_DumpTests.swift */,
+				E12247371FFE96C700A5D859 /* ControllerFactoryTests.swift */,
+				E12247521FFE9A8B00A5D859 /* TagDataSourceTests.swift */,
+				E12247581FFE9BA600A5D859 /* TronaldBaseDataSourceTests.swift */,
+				E12247541FFE9AB500A5D859 /* TagListDataAdapterTests.swift */,
+				E12247501FFE98FE00A5D859 /* TagsDataSourceTests.swift */,
+				E12247561FFE9B6B00A5D859 /* TagDetailDataAdapterTests.swift */,
+				E12246F41FFE46BC00A5D859 /* Info.plist */,
+			);
+			path = "Tronald DumpTests";
+			sourceTree = "<group>";
+		};
+		E12246FF1FFE491B00A5D859 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E122471B1FFE56DD00A5D859 /* Common */,
+				E12247011FFE494600A5D859 /* TronaldDumpAPIService.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E12247001FFE492100A5D859 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				E12247301FFE859100A5D859 /* ControllerFactory.swift */,
+				E122470C1FFE4E4200A5D859 /* Common */,
+				E12247061FFE4DA600A5D859 /* TagListCollectionViewController.swift */,
+				E12247171FFE55C800A5D859 /* TagListCollectionDataAdapter.swift */,
+				E122472A1FFE83DD00A5D859 /* TagDetailViewController.swift */,
+				E122472C1FFE844D00A5D859 /* TagDetailDataAdapter.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		E12247031FFE4D0200A5D859 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				E12247041FFE4D0D00A5D859 /* Utils.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		E12247081FFE4DCA00A5D859 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E12247091FFE4DD500A5D859 /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E12247091FFE4DD500A5D859 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				E12247241FFE7DDF00A5D859 /* TronaldBaseCollectionViewCell.swift */,
+				E122470A1FFE4DEB00A5D859 /* SimpleTextCollectionViewCell.swift */,
+				E12247351FFE925700A5D859 /* QuoteCollectionViewCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		E122470C1FFE4E4200A5D859 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E122470F1FFE500700A5D859 /* TronaldBaseViewController.swift */,
+				E122470D1FFE4E5100A5D859 /* TronaldCollectionViewController.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E12247111FFE546E00A5D859 /* Appearance */ = {
+			isa = PBXGroup;
+			children = (
+				E12247121FFE547E00A5D859 /* TronaldStyles.swift */,
+				E12247281FFE7E8600A5D859 /* TronaldStyles+Animation.swift */,
+			);
+			path = Appearance;
+			sourceTree = "<group>";
+		};
+		E122471B1FFE56DD00A5D859 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				E12247191FFE55E100A5D859 /* TronaldBaseDataAdapter.swift */,
+				E122471C1FFE56EA00A5D859 /* TronaldBaseDataSource.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E122471E1FFE588800A5D859 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				E12247321FFE8A4C00A5D859 /* Objects */,
+				E122472E1FFE846700A5D859 /* TagDataSource.swift */,
+				E122471F1FFE58A100A5D859 /* TagsDataSource.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		E12247211FFE7CCB00A5D859 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E12247221FFE7CD900A5D859 /* UIColor+Tronald.swift */,
+				E12247261FFE7E5800A5D859 /* UIView+Tronald.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E12247321FFE8A4C00A5D859 /* Objects */ = {
+			isa = PBXGroup;
+			children = (
+				E12247331FFE8A5C00A5D859 /* TrumpQuote.swift */,
+			);
+			path = Objects;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E12246D91FFE46BC00A5D859 /* Tronald Dump */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E12246F71FFE46BC00A5D859 /* Build configuration list for PBXNativeTarget "Tronald Dump" */;
+			buildPhases = (
+				3759A39B83FB00C7A51DC908 /* [CP] Check Pods Manifest.lock */,
+				E12246D61FFE46BC00A5D859 /* Sources */,
+				E12246D71FFE46BC00A5D859 /* Frameworks */,
+				E12246D81FFE46BC00A5D859 /* Resources */,
+				979251DA9AD4719BB574E342 /* [CP] Embed Pods Frameworks */,
+				863914F0AF0E0ABB7394B94F /* [CP] Copy Pods Resources */,
+				E12247141FFE54A400A5D859 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Tronald Dump";
+			productName = "Tronald Dump";
+			productReference = E12246DA1FFE46BC00A5D859 /* Tronald Dump.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E12246ED1FFE46BC00A5D859 /* Tronald DumpTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E12246FA1FFE46BC00A5D859 /* Build configuration list for PBXNativeTarget "Tronald DumpTests" */;
+			buildPhases = (
+				C5CEE621507A97B1467B9797 /* [CP] Check Pods Manifest.lock */,
+				E12246EA1FFE46BC00A5D859 /* Sources */,
+				E12246EB1FFE46BC00A5D859 /* Frameworks */,
+				E12246EC1FFE46BC00A5D859 /* Resources */,
+				6C6140854A767BA7A131CA79 /* [CP] Embed Pods Frameworks */,
+				CA8DE7223FE5104F46F1199A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E12246F01FFE46BC00A5D859 /* PBXTargetDependency */,
+			);
+			name = "Tronald DumpTests";
+			productName = "Tronald DumpTests";
+			productReference = E12246EE1FFE46BC00A5D859 /* Tronald DumpTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E12246D21FFE46BC00A5D859 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = "Allan Weir";
+				TargetAttributes = {
+					E12246D91FFE46BC00A5D859 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					E12246ED1FFE46BC00A5D859 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = E12246D91FFE46BC00A5D859;
+					};
+				};
+			};
+			buildConfigurationList = E12246D51FFE46BC00A5D859 /* Build configuration list for PBXProject "Tronald Dump" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E12246D11FFE46BB00A5D859;
+			productRefGroup = E12246DB1FFE46BC00A5D859 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E12246D91FFE46BC00A5D859 /* Tronald Dump */,
+				E12246ED1FFE46BC00A5D859 /* Tronald DumpTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E12246D81FFE46BC00A5D859 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E12247161FFE551500A5D859 /* .swiftlint.yml in Resources */,
+				E12246E81FFE46BC00A5D859 /* LaunchScreen.storyboard in Resources */,
+				E12246E51FFE46BC00A5D859 /* Assets.xcassets in Resources */,
+				E12246E31FFE46BC00A5D859 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E12246EC1FFE46BC00A5D859 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3759A39B83FB00C7A51DC908 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tronald Dump-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6C6140854A767BA7A131CA79 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tronald DumpTests/Pods-Tronald DumpTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		863914F0AF0E0ABB7394B94F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tronald Dump/Pods-Tronald Dump-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		979251DA9AD4719BB574E342 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Tronald Dump/Pods-Tronald Dump-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/Log/Log.framework",
+				"${BUILT_PRODUCTS_DIR}/ReachabilitySwift/Reachability.framework",
+				"${BUILT_PRODUCTS_DIR}/SnapKit/SnapKit.framework",
+				"${BUILT_PRODUCTS_DIR}/YYCache/YYCache.framework",
+				"${BUILT_PRODUCTS_DIR}/YYImage/YYImage.framework",
+				"${BUILT_PRODUCTS_DIR}/YYWebImage/YYWebImage.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Log.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Reachability.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SnapKit.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYCache.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYWebImage.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tronald Dump/Pods-Tronald Dump-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C5CEE621507A97B1467B9797 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tronald DumpTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CA8DE7223FE5104F46F1199A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tronald DumpTests/Pods-Tronald DumpTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E12247141FFE54A400A5D859 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\nswiftlint\nelse\necho \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E12246D61FFE46BC00A5D859 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E12247101FFE500700A5D859 /* TronaldBaseViewController.swift in Sources */,
+				E122471D1FFE56EA00A5D859 /* TronaldBaseDataSource.swift in Sources */,
+				E12247311FFE859100A5D859 /* ControllerFactory.swift in Sources */,
+				E12247021FFE494600A5D859 /* TronaldDumpAPIService.swift in Sources */,
+				E12247071FFE4DA600A5D859 /* TagListCollectionViewController.swift in Sources */,
+				E122470E1FFE4E5100A5D859 /* TronaldCollectionViewController.swift in Sources */,
+				E122472D1FFE844D00A5D859 /* TagDetailDataAdapter.swift in Sources */,
+				E12247201FFE58A100A5D859 /* TagsDataSource.swift in Sources */,
+				E122472F1FFE846700A5D859 /* TagDataSource.swift in Sources */,
+				E12247251FFE7DDF00A5D859 /* TronaldBaseCollectionViewCell.swift in Sources */,
+				E12247231FFE7CD900A5D859 /* UIColor+Tronald.swift in Sources */,
+				E12246DE1FFE46BC00A5D859 /* AppDelegate.swift in Sources */,
+				E12247051FFE4D0D00A5D859 /* Utils.swift in Sources */,
+				E12247271FFE7E5800A5D859 /* UIView+Tronald.swift in Sources */,
+				E12247291FFE7E8600A5D859 /* TronaldStyles+Animation.swift in Sources */,
+				E12247341FFE8A5C00A5D859 /* TrumpQuote.swift in Sources */,
+				E122472B1FFE83DD00A5D859 /* TagDetailViewController.swift in Sources */,
+				E12247131FFE547E00A5D859 /* TronaldStyles.swift in Sources */,
+				E122471A1FFE55E100A5D859 /* TronaldBaseDataAdapter.swift in Sources */,
+				E12247361FFE925700A5D859 /* QuoteCollectionViewCell.swift in Sources */,
+				E12247181FFE55C800A5D859 /* TagListCollectionDataAdapter.swift in Sources */,
+				E122470B1FFE4DEB00A5D859 /* SimpleTextCollectionViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E12246EA1FFE46BC00A5D859 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E12247511FFE98FE00A5D859 /* TagsDataSourceTests.swift in Sources */,
+				E12247451FFE973A00A5D859 /* TronaldDumpAPIService.swift in Sources */,
+				E12247481FFE973A00A5D859 /* QuoteCollectionViewCell.swift in Sources */,
+				E12247411FFE973A00A5D859 /* TagDataSource.swift in Sources */,
+				E12247531FFE9A8B00A5D859 /* TagDataSourceTests.swift in Sources */,
+				E122473A1FFE973A00A5D859 /* TronaldBaseViewController.swift in Sources */,
+				E12247391FFE96CF00A5D859 /* ControllerFactory.swift in Sources */,
+				E12247461FFE973A00A5D859 /* TronaldBaseCollectionViewCell.swift in Sources */,
+				E122473B1FFE973A00A5D859 /* TronaldCollectionViewController.swift in Sources */,
+				E12247441FFE973A00A5D859 /* TronaldBaseDataSource.swift in Sources */,
+				E122473D1FFE973A00A5D859 /* TagListCollectionDataAdapter.swift in Sources */,
+				E12247421FFE973A00A5D859 /* TagsDataSource.swift in Sources */,
+				E122473C1FFE973A00A5D859 /* TagListCollectionViewController.swift in Sources */,
+				E12247401FFE973A00A5D859 /* TrumpQuote.swift in Sources */,
+				E122474A1FFE973A00A5D859 /* UIColor+Tronald.swift in Sources */,
+				E12247571FFE9B6B00A5D859 /* TagDetailDataAdapterTests.swift in Sources */,
+				E12247591FFE9BA600A5D859 /* TronaldBaseDataSourceTests.swift in Sources */,
+				E12247471FFE973A00A5D859 /* SimpleTextCollectionViewCell.swift in Sources */,
+				E122474C1FFE974600A5D859 /* TronaldStyles.swift in Sources */,
+				E122473F1FFE973A00A5D859 /* TagDetailDataAdapter.swift in Sources */,
+				E12247551FFE9AB500A5D859 /* TagListDataAdapterTests.swift in Sources */,
+				E12247381FFE96C700A5D859 /* ControllerFactoryTests.swift in Sources */,
+				E122474D1FFE974600A5D859 /* TronaldStyles+Animation.swift in Sources */,
+				E122474B1FFE973A00A5D859 /* UIView+Tronald.swift in Sources */,
+				E122473E1FFE973A00A5D859 /* TagDetailViewController.swift in Sources */,
+				E12246F31FFE46BC00A5D859 /* Tronald_DumpTests.swift in Sources */,
+				E12247491FFE973A00A5D859 /* Utils.swift in Sources */,
+				E12247431FFE973A00A5D859 /* TronaldBaseDataAdapter.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E12246F01FFE46BC00A5D859 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E12246D91FFE46BC00A5D859 /* Tronald Dump */;
+			targetProxy = E12246EF1FFE46BC00A5D859 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E12246E11FFE46BC00A5D859 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E12246E21FFE46BC00A5D859 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E12246E61FFE46BC00A5D859 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E12246E71FFE46BC00A5D859 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E12246F51FFE46BC00A5D859 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E12246F61FFE46BC00A5D859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E12246F81FFE46BC00A5D859 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 72A792C5F31FC6C26D3B5706 /* Pods-Tronald Dump.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT9P52Z4V8;
+				INFOPLIST_FILE = "Tronald Dump/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.allanweir.Tronald-Dump";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		E12246F91FFE46BC00A5D859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F058EB8DE78DDBBBD1BA2A6B /* Pods-Tronald Dump.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT9P52Z4V8;
+				INFOPLIST_FILE = "Tronald Dump/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.allanweir.Tronald-Dump";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		E12246FB1FFE46BC00A5D859 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B28603C5F40FAEE3B0CE440C /* Pods-Tronald DumpTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT9P52Z4V8;
+				INFOPLIST_FILE = "Tronald DumpTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.allanweir.Tronald-DumpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tronald Dump.app/Tronald Dump";
+			};
+			name = Debug;
+		};
+		E12246FC1FFE46BC00A5D859 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5C74E745EFB97CF809FAB454 /* Pods-Tronald DumpTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = BT9P52Z4V8;
+				INFOPLIST_FILE = "Tronald DumpTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.allanweir.Tronald-DumpTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Tronald Dump.app/Tronald Dump";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E12246D51FFE46BC00A5D859 /* Build configuration list for PBXProject "Tronald Dump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E12246F51FFE46BC00A5D859 /* Debug */,
+				E12246F61FFE46BC00A5D859 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E12246F71FFE46BC00A5D859 /* Build configuration list for PBXNativeTarget "Tronald Dump" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E12246F81FFE46BC00A5D859 /* Debug */,
+				E12246F91FFE46BC00A5D859 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E12246FA1FFE46BC00A5D859 /* Build configuration list for PBXNativeTarget "Tronald DumpTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E12246FB1FFE46BC00A5D859 /* Debug */,
+				E12246FC1FFE46BC00A5D859 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E12246D21FFE46BC00A5D859 /* Project object */;
+}
